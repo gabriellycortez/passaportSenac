@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Painel | Museu Vivo da Saúde Mental</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="painel.css">
+</head>
+<body>
+<div class="spectrum" id="spec"></div>
+<header>
+  <div><div class="eyebrow" id="museu"></div><h1>Passaporte em tempo real</h1></div>
+  <div class="status" id="status">Carregando…</div>
+</header>
+<section class="kpis">
+  <div class="kpi"><div class="n" id="k-vis">–</div><div class="l">visitantes com passaporte</div></div>
+  <div class="kpi"><div class="n" id="k-carimbos">–</div><div class="l">carimbos dados</div></div>
+  <div class="kpi"><div class="n" id="k-conc">–</div><div class="l">concluíram as 6 estações</div></div>
+</section>
+<main>
+  <section><h2>Pessoas por estação</h2><div class="bars" id="bars"></div></section>
+  <section><h2>Últimos carimbos</h2><ul class="feed" id="feed"><li class="empty">Nenhum carimbo ainda.</li></ul></section>
+</main>
+<footer id="frase"></footer>
+
+<script src="config.js"></script>
+<script src="painel.js"></script>
+</body>
+</html>
